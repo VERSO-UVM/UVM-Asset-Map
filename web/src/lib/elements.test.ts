@@ -107,6 +107,12 @@ describe("buildElements", () => {
     expect(byId(els, "c:testing")).toBeUndefined();
   });
 
+  it("records the tree parent (not cytoscape's compound `parent`) for transition anchoring", () => {
+    const els = build({ mode: { kind: "focus", focusId: "c:testing" } });
+    expect(byId(els, "p:maple").data.treeParent).toBe("c:testing");
+    expect(byId(els, "p:maple").data.parent).toBeUndefined();
+  });
+
   it("highlight class applied", () => {
     const els = build({ mode: { kind: "focus", focusId: "c:testing" }, highlightIds: new Set(["p:soil"]) });
     expect(byId(els, "p:soil").classes).toContain("highlight");

@@ -1,5 +1,5 @@
 import type { Stylesheet } from "cytoscape";
-import type { Theme } from "./encoding";
+import { TRANSITION_MS, type Theme } from "./encoding";
 import { BAR_H } from "./elements";
 
 export function graphStyle(t: Theme): Stylesheet[] {
@@ -21,7 +21,8 @@ export function graphStyle(t: Theme): Stylesheet[] {
         "line-height": 1.3,
         color: t.ink,
         "transition-property": "opacity",
-        "transition-duration": 150,
+        "transition-duration": TRANSITION_MS,
+        "transition-timing-function": "ease-in-out-cubic",
       },
     },
     {
@@ -53,11 +54,15 @@ export function graphStyle(t: Theme): Stylesheet[] {
     },
     { selector: "node.highlight.selected", style: { "underlay-color": t.accent, "underlay-opacity": 0.3 } as never },
     { selector: "node.round", style: { "underlay-shape": "ellipse" } as never },
+    // The focus node already has its wash; a rectangular glow around a hexagon reads as a box.
+    { selector: "node.focus.selected", style: { "underlay-opacity": 0 } as never },
     { selector: "node.dim", style: { opacity: 0.38 } },
     { selector: "node.faded", style: { opacity: 0.5 } },
     {
       selector: "edge",
       style: {
+        "transition-property": "opacity, line-color, width",
+        "transition-duration": TRANSITION_MS,
         width: 1.5,
         "curve-style": "round-taxi" as never,
         "taxi-direction": "auto",
