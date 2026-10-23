@@ -8,11 +8,9 @@ interface Props {
   onToggleRegion: (region: string) => void;
 }
 
-const SHAPES: [string, string][] = [
-  ["hex", "University"],
-  ["rect", "College / unit"],
-  ["tag", "Asset category"],
-  ["ellipse", "Program"],
+const NODE_TYPES: [string, string][] = [
+  ["hex", "UVM · college · category"],
+  ["oval", "Program (shape = region)"],
 ];
 
 export function Legend({ filters, theme, onToggleAudience, onToggleRegion }: Props) {
@@ -31,12 +29,12 @@ export function Legend({ filters, theme, onToggleAudience, onToggleRegion }: Pro
         })}
       </fieldset>
       <fieldset>
-        <legend>Region served <span className="hint">(border)</span></legend>
+        <legend>Region served <span className="hint">(program shape)</span></legend>
         {REGIONS.map((r) => {
           const on = !filters.hiddenRegions.has(r.name);
           return (
             <button key={r.name} type="button" className={`toggle ${on ? "" : "off"}`} aria-pressed={on} onClick={() => onToggleRegion(r.name)}>
-              <span className="border-sample" style={{ borderStyle: r.style, borderWidth: Math.min(r.width, 6) }} />
+              <span className={`shape ${r.icon}`} aria-hidden />
               {r.short}
             </button>
           );
@@ -44,7 +42,7 @@ export function Legend({ filters, theme, onToggleAudience, onToggleRegion }: Pro
       </fieldset>
       <fieldset>
         <legend>Node type</legend>
-        {SHAPES.map(([s, label]) => (
+        {NODE_TYPES.map(([s, label]) => (
           <span key={s} className="shape-item"><span className={`shape ${s}`} />{label}</span>
         ))}
       </fieldset>

@@ -47,6 +47,8 @@ export function useCytoscape(
     cy.on("mouseover", "node", () => container.current && (container.current.style.cursor = "pointer"));
     cy.on("mouseout", "node", () => container.current && (container.current.style.cursor = ""));
     cyRef.current = cy;
+    // Canvas text doesn't re-render when a web font arrives; repaint once fonts are ready.
+    document.fonts?.ready.then(() => cyRef.current?.style().update());
     const onResize = () => cy.resize();
     window.addEventListener("resize", onResize);
     return () => {
@@ -64,26 +66,35 @@ export function useCytoscape(
   useEffect(() => {
     const cy = cyRef.current;
     if (!cy) return;
-    const nextIds = new Set(elements.map((e) => e.data.id!));
-    const curIds = new Set(cy.elements().map((e) => e.id()));
+    const nextIds = new Set(elements.filter((e) => e.group === "nodes").map((e) => e.data.id!));
+    const curIds = new Set(cy.nodes().map((e) => e.id()));
     const sameShape = nextIds.size === curIds.size && [...nextIds].every((id) => curIds.has(id));
     if (sameShape) {
       cy.batch(() => {
         for (const el of elements) {
           const ele = cy.getElementById(el.data.id!);
+          const pending = ele.hasClass("pending");
           ele.data(el.data);
           ele.classes(el.classes ?? "");
+          if (pending) ele.addClass("pending");
         }
       });
       return;
     }
+    // Edges are hidden while nodes animate into place, so they never render between overlapping nodes.
     cy.batch(() => {
       cy.elements().remove();
       cy.add(elements);
+      cy.edges().addClass("pending");
     });
-    // Portrait screens: grow the tree sideways-down instead of a wide, tiny top-down fan.
+    // Portrait screens: grow the tree sideways instead of a wide, tiny top-down fan.
     const narrow = cy.container()!.clientWidth < 600;
-    cy.layout({ ...LAYOUT, rankDir: narrow ? "LR" : "TB" } as unknown as cytoscape.LayoutOptions).run();
+    cy.style().selector("edge").style("taxi-direction", narrow ? "rightward" : "downward").update();
+    const layout = cy.layout({ ...LAYOUT, rankDir: narrow ? "LR" : "TB" } as unknown as cytoscape.LayoutOptions);
+    layout.one("layoutstop", () => {
+      if (!cy.destroyed()) cy.edges().removeClass("pending");
+    });
+    layout.run();
   }, [elements]);
 
   return cyRef;

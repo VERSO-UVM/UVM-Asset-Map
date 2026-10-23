@@ -1,5 +1,5 @@
 import { buildElements, wrapLabel } from "./elements";
-import { LIGHT, NODE_SHAPES, audienceColor } from "./encoding";
+import { LIGHT, NODE_SHAPES, REGIONS, audienceColor, regionStyle } from "./encoding";
 import { makeData, noFilters } from "../test/fixture";
 
 const data = makeData();
@@ -10,20 +10,34 @@ const edges = (els: ReturnType<typeof build>) => els.filter((e) => e.group === "
 const byId = (els: ReturnType<typeof build>, id: string) => els.find((e) => e.data.id === id)!;
 
 describe("buildElements", () => {
-  it("assigns shape per node type", () => {
-    const els = build();
-    for (const n of nodes(els)) expect(n.data.shape).toBe(NODE_SHAPES[n.data.type as keyof typeof NODE_SHAPES]);
+  it("draws every non-program node as a hexagon", () => {
+    for (const n of nodes(build())) {
+      if (n.data.type !== "program") expect(n.data.shape).toBe(NODE_SHAPES[n.data.type as keyof typeof NODE_SHAPES]);
+    }
+    expect(NODE_SHAPES.unit).toBe("round-hexagon");
+    expect(NODE_SHAPES.category).toBe("round-hexagon");
   });
 
-  it("colors programs by primary audience and borders by region", () => {
-    const els = build({ mode: { kind: "focus", focusId: "c:ext" } });
-    const hort = byId(els, "p:hort");
-    expect(hort.data.borderColor).toBe(audienceColor("Farmers & Producers", false));
-    expect(hort.data.borderStyle).toBe("solid");
-    expect(hort.data.borderWidth).toBe(5); // Regional
-    const lib = byId(build({ mode: { kind: "focus", focusId: "c:unspec" } }), "p:lib");
-    expect(lib.data.borderStyle).toBe("dashed");
-    expect(lib.data.borderColor).toBe(audienceColor("Unknown", false));
+  it("colors programs by audience and shapes them by region, with no borders", () => {
+    const shapeOf = (focus: string, id: string) => byId(build({ mode: { kind: "focus", focusId: focus } }), id).data;
+    const hort = shapeOf("c:ext", "p:hort"); // Regional
+    expect(hort.fill).toBe(audienceColor("Farmers & Producers", false));
+    expect(hort.shape).toBe("round-rectangle");
+    expect(hort.w).not.toBe(hort.h);
+    const maple = shapeOf("c:testing", "p:maple"); // Vermont: oval
+    expect(maple.shape).toBe("ellipse");
+    const agro = shapeOf("c:research", "p:agro"); // National: pentagon
+    expect(agro.shape).toBe("round-pentagon");
+    const lib = shapeOf("c:unspec", "p:lib"); // Unknown: square
+    expect(lib.shape).toBe("round-rectangle");
+    expect(lib.w).toBe(lib.h);
+    expect(lib.fill).toBe(audienceColor("Unknown", false));
+    for (const n of nodes(build())) expect(n.data.borderWidth).toBeUndefined();
+  });
+
+  it("every region maps to a distinct shape icon", () => {
+    expect(new Set(REGIONS.map((r) => r.icon)).size).toBe(REGIONS.length);
+    expect(regionStyle("Campus/Burlington Area")).toMatchObject({ shape: "ellipse", equal: true });
   });
 
   it("puts title and program count in aggregate labels", () => {

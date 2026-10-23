@@ -21,21 +21,31 @@ export function audienceGroup(audience: string): string {
   return AUDIENCE_GROUPS.find((g) => g.members.includes(audience))?.group ?? UNKNOWN;
 }
 
-export function audienceColor(group: string, dark: boolean): string {
-  const g = AUDIENCE_GROUPS.find((x) => x.group === group);
-  const c = g ?? UNKNOWN_COLOR;
+/** Saturated base hue for a group (the validated palette slot). */
+export function audienceBase(group: string, dark: boolean): string {
+  const c = AUDIENCE_GROUPS.find((x) => x.group === group) ?? UNKNOWN_COLOR;
   return dark ? c.dark : c.light;
+}
+
+/**
+ * The softened (pastel) hue used everywhere on screen: the palette slot mixed toward white. Hue order and
+ * therefore group separation are preserved; every node also carries a text label, so identity is never color-alone.
+ */
+export function audienceColor(group: string, dark: boolean): string {
+  // Light: pastel toward white, so dark ink stays legible on it. Dark: muted toward the dark surface, for light ink.
+  return dark ? tint(audienceBase(group, true), "#211f29", 0.55) : tint(audienceBase(group, false), "#ffffff", 0.5);
 }
 
 export const AUDIENCE_GROUP_NAMES = [...AUDIENCE_GROUPS.map((g) => g.group), UNKNOWN];
 
-/** Region is ordinal: wider reach = heavier border. */
-export const REGIONS: { name: string; style: "dotted" | "solid" | "double" | "dashed"; width: number; short: string }[] = [
-  { name: "Campus/Burlington Area", style: "dotted", width: 3, short: "Campus/Burlington" },
-  { name: "Vermont Statewide", style: "solid", width: 2, short: "Vermont" },
-  { name: "Regional (Northeast/Cross-border)", style: "solid", width: 5, short: "Regional" },
-  { name: "National/International", style: "double", width: 7, short: "National/Intl" },
-  { name: UNKNOWN, style: "dashed", width: 2, short: "Unknown" },
+/** Region served is encoded by program shape (no borders). */
+export type ProgramShape = "ellipse" | "round-rectangle" | "round-pentagon";
+export const REGIONS: { name: string; shape: ProgramShape; equal: boolean; icon: string; short: string }[] = [
+  { name: "Campus/Burlington Area", shape: "ellipse", equal: true, icon: "circle", short: "Campus/Burlington" },
+  { name: "Vermont Statewide", shape: "ellipse", equal: false, icon: "oval", short: "Vermont" },
+  { name: "Regional (Northeast/Cross-border)", shape: "round-rectangle", equal: false, icon: "box", short: "Regional" },
+  { name: "National/International", shape: "round-pentagon", equal: false, icon: "pentagon", short: "National/Intl" },
+  { name: UNKNOWN, shape: "round-rectangle", equal: true, icon: "square", short: "Unknown" },
 ];
 
 export function regionStyle(region: string) {
@@ -43,10 +53,10 @@ export function regionStyle(region: string) {
 }
 
 export const NODE_SHAPES: Record<NodeType, string> = {
-  root: "hexagon",
-  unit: "round-rectangle",
-  category: "round-tag",
-  program: "ellipse",
+  root: "round-hexagon",
+  unit: "round-hexagon",
+  category: "round-hexagon",
+  program: "ellipse", // overridden per program by region shape
 };
 
 export const TYPE_LABELS: Record<NodeType, string> = {
@@ -73,12 +83,12 @@ export interface Theme {
 }
 
 export const LIGHT: Theme = {
-  dark: false, surface: "#fcfcfb", plane: "#f9f9f7", ink: "#0b0b0b", ink2: "#52514e",
-  muted: "#898781", hairline: "#e1e0d9", border: "#c3c2b7", accent: "#2a78d6",
+  dark: false, surface: "#fffefc", plane: "#f6f3fa", ink: "#2d2b38", ink2: "#615d72",
+  muted: "#9b97aa", hairline: "#ece8f3", border: "#d8d2e6", accent: "#8f9ef0",
 };
 export const DARK: Theme = {
-  dark: true, surface: "#1a1a19", plane: "#0d0d0d", ink: "#f0efec", ink2: "#c3c2b7",
-  muted: "#898781", hairline: "#2c2c2a", border: "#383835", accent: "#3987e5",
+  dark: true, surface: "#211f29", plane: "#17161d", ink: "#eceaf4", ink2: "#bcb8cc",
+  muted: "#8d899c", hairline: "#2f2d3a", border: "#423e52", accent: "#a6b3f5",
 };
 
 /** Mix a hex color toward the surface; used for the light tint inside program nodes so ink text stays legible. */

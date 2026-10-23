@@ -1,7 +1,7 @@
 import type { ElementDefinition } from "cytoscape";
 import type { AssetData, Filters } from "../types";
 import {
-  AUDIENCE_GROUP_NAMES, NODE_SHAPES, audienceColor, programGroup, regionStyle, tint, type Theme,
+  AUDIENCE_GROUP_NAMES, NODE_SHAPES, audienceColor, programGroup, regionStyle, type Theme,
 } from "./encoding";
 import { closure, descendantPrograms, expandSmall, filteredCounts, isVisibleProgram, programById } from "./tree";
 
@@ -25,9 +25,9 @@ export function mixBar(mix: { group: string; n: number }[], theme: Theme): strin
   const gap = 2;
   const usable = BAR_W - gap * Math.max(0, mix.length - 1);
   let x = 0;
-  const rects = mix.map((m, i) => {
+  const rects = mix.map((m) => {
     const w = total ? (m.n / total) * usable : 0;
-    const r = `<rect x="${x.toFixed(2)}" y="0" width="${w.toFixed(2)}" height="${BAR_H}" rx="${i === 0 || i === mix.length - 1 ? 2 : 0}" fill="${audienceColor(m.group, theme.dark)}"/>`;
+    const r = `<rect x="${x.toFixed(2)}" y="0" width="${w.toFixed(2)}" height="${BAR_H}" rx="3" fill="${audienceColor(m.group, theme.dark)}"/>`;
     x += w + gap;
     return r;
   });
@@ -49,10 +49,20 @@ export function wrapLabel(text: string, perLine = CHARS_PER_LINE): string[] {
   return lines;
 }
 
-function size(lines: string[], type: string) {
+function size(lines: string[], type: string, shape?: { shape: string; equal: boolean }) {
   const longest = Math.max(...lines.map((l) => l.length), 4);
-  const padX = type === "program" ? 26 : type === "category" ? 34 : 30;
-  return { w: Math.round(longest * 6.6 + padX), h: Math.round(lines.length * 14 + (type === "program" ? 18 : 30)) };
+  if (type !== "program") {
+    // Hexagon: slanted sides eat horizontal room, so pad wider.
+    return { w: Math.round(longest * 6.8 + 56), h: Math.round(lines.length * 14 + 40) };
+  }
+  let w = longest * 6.6 + 30;
+  let h = lines.length * 14 + 22;
+  if (shape?.shape === "round-pentagon") {
+    w *= 1.12;
+    h *= 1.45; // point on top: give the label room below it
+  }
+  if (shape?.equal) w = h = Math.max(w, h);
+  return { w: Math.round(w), h: Math.round(h) };
 }
 
 /** Pure: turn the tree + UI state into cytoscape elements. All styling values travel in `data`. */
@@ -86,25 +96,20 @@ export function buildElements(data: AssetData, opts: BuildOptions): ElementDefin
   for (const id of visible) {
     const n = data.nodes[id];
     const isProgram = n.type === "program";
-    const lines = wrapLabel(n.label);
+    const region = isProgram ? regionStyle(programs.get(id)!.region_category) : undefined;
+    // Circles and squares get narrower lines so they don't balloon.
+    const lines = wrapLabel(n.label, region?.equal ? 13 : CHARS_PER_LINE);
     const count = counts.get(id) ?? 0;
     const label = isProgram ? lines.join("\n") : [...lines, `${count} program${count === 1 ? "" : "s"}`].join("\n");
-    const { w, h } = size(isProgram ? lines : [...lines, "00 programs"], n.type);
+    const { w, h } = size(isProgram ? lines : [...lines, "00 programs"], n.type, region);
     const d: Record<string, unknown> = {
-      id, label, type: n.type, shape: NODE_SHAPES[n.type], w, h, count,
+      id, label, type: n.type, shape: region?.shape ?? NODE_SHAPES[n.type], w, h, count,
       childCount: n.children.filter((c) => (counts.get(c) ?? 0) > 0).length,
     };
 
     if (isProgram) {
-      const p = programs.get(id)!;
-      const group = programGroup(p);
-      const color = audienceColor(group, theme.dark);
-      const region = regionStyle(p.region_category);
-      Object.assign(d, {
-        group, region: region.name,
-        fill: tint(color, theme.surface, theme.dark ? 0.35 : 0.22),
-        borderColor: color, borderStyle: region.style, borderWidth: region.width,
-      });
+      const group = programGroup(programs.get(id)!);
+      Object.assign(d, { group, region: region!.name, fill: audienceColor(group, theme.dark) });
     } else {
       // Stacked bar of the audience-group mix of counted descendant programs, drawn along the node's bottom.
       const tally = new Map<string, number>();
@@ -116,13 +121,14 @@ export function buildElements(data: AssetData, opts: BuildOptions): ElementDefin
       }
       const mix = AUDIENCE_GROUP_NAMES.map((g) => ({ group: g, n: tally.get(g) ?? 0 })).filter((x) => x.n > 0);
       Object.assign(d, {
-        fill: theme.surface, borderColor: theme.border, borderStyle: "solid", borderWidth: n.type === "root" ? 3 : 2,
+        fill: n.type === "root" ? (theme.dark ? "#2e3150" : "#e6e9fc") : theme.surface,
         mix: mix.map((x) => `${x.group}: ${x.n}`).join(", "),
         bar: mixBar(mix, theme),
       });
     }
 
     const classes: string[] = [n.type];
+    if (d.shape === "ellipse") classes.push("round");
     if (id === faded) classes.push("faded");
     if (mode.kind === "focus" && id === mode.focusId) classes.push("focus");
     if (id === selectedId) classes.push("selected");
