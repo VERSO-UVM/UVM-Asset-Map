@@ -119,11 +119,6 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
   border: 1px solid var(--canvas-line); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden;
 }
 .graph { position: absolute; inset: 0; }
-.fit {
-  position: absolute; right: 12px; top: 12px; padding: 4px 14px; border: 1px solid var(--hairline);
-  border-radius: 999px; background: var(--surface); cursor: pointer; color: var(--ink2);
-}
-.fit:hover { background: var(--plane); }
 
 .table-wrap { flex: 1; overflow: auto; background: var(--surface); border: 1px solid var(--hairline); border-radius: 18px; box-shadow: var(--shadow); }
 table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }

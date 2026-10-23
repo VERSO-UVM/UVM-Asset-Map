@@ -104,6 +104,7 @@ export function buildElements(data: AssetData, opts: BuildOptions): ElementDefin
     const { w, h } = size(isProgram ? lines : [...lines, "00 programs"], n.type, region);
     const d: Record<string, unknown> = {
       id, label, type: n.type, shape: region?.shape ?? NODE_SHAPES[n.type], w, h, count,
+      treeParent: n.parent, // not `parent`: that key would make cytoscape treat it as a compound node
       childCount: n.children.filter((c) => (counts.get(c) ?? 0) > 0).length,
     };
 
