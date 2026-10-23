@@ -11,9 +11,7 @@ export function graphStyle(t: Theme): Stylesheet[] {
         width: "data(w)",
         height: "data(h)",
         "background-color": "data(fill)",
-        "border-color": "data(borderColor)",
-        "border-style": "data(borderStyle)" as never,
-        "border-width": "data(borderWidth)",
+        "border-width": 0,
         label: "data(label)",
         "text-wrap": "wrap",
         "text-valign": "center",
@@ -40,19 +38,21 @@ export function graphStyle(t: Theme): Stylesheet[] {
       } as never,
     },
     { selector: "node.root, node.unit", style: { "font-weight": 700, "font-size": 12 } },
-    { selector: "node.unit", style: { "corner-radius": 14 } as never },
-    // Categories are soft pills: fully rounded ends.
-    { selector: "node.category", style: { "corner-radius": "data(pill)", "font-weight": 600 } as never },
-    { selector: "node.focus", style: { "border-color": t.accent, "border-width": 2.5 } },
+    { selector: "node.root", style: { "font-size": 13 } },
+    { selector: "node.category", style: { "font-weight": 600 } },
+    { selector: "node.program", style: { "corner-radius": 12 } as never },
+    // The drilled-into node gets a periwinkle wash instead of a border.
+    { selector: "node.focus", style: { "background-color": t.dark ? "#2e3150" : "#e6e9fc" } },
     {
       selector: "node.selected",
       style: { "underlay-color": t.accent, "underlay-padding": 8, "underlay-opacity": 0.22, "underlay-shape": "round-rectangle" } as never,
     },
-    { selector: "node.program.selected", style: { "underlay-shape": "ellipse" } as never },
     {
       selector: "node.highlight",
-      style: { "outline-color": t.accent, "outline-width": 3, "outline-offset": 4, "outline-style": "solid", "outline-opacity": 0.8 } as never,
+      style: { "underlay-color": t.dark ? "#e0b463" : "#f2c66d", "underlay-padding": 7, "underlay-opacity": 0.45, "underlay-shape": "round-rectangle" } as never,
     },
+    { selector: "node.highlight.selected", style: { "underlay-color": t.accent, "underlay-opacity": 0.3 } as never },
+    { selector: "node.round", style: { "underlay-shape": "ellipse" } as never },
     { selector: "node.dim", style: { opacity: 0.38 } },
     { selector: "node.faded", style: { opacity: 0.5 } },
     {

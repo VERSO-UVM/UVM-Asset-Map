@@ -62,11 +62,13 @@ Short record of the choices behind the data pipeline and the viewer, and why the
   especially for colorblind viewers. The palette was checked with a colorblind-safety validator.
   Colors are fixed per group, so filtering never repaints them. Every node also has a text label,
   and the detail panel lists the full (ungrouped) audience values.
-- **Soft/pastel styling.** On screen, each audience color is its palette slot mixed toward white, and nodes
-  get a very light wash of it. This keeps the hue order, which is what makes the groups distinguishable, but
-  lowers contrast. Labels, the legend and the detail panel carry identity, so color is never the only cue.
-- **Shape = node type** (rounded hexagon UVM, rounded rectangle unit, pill category, ellipse program). Edges
-  are rounded org-chart elbows.
-  **Border = region** (dotted campus, thin solid Vermont, thick solid regional, double
-  national/intl, dashed unknown). Program nodes use a light tint of their audience color, so the
-  dark label text stays readable. Category and unit nodes show a pie of their programs' audience mix.
+- **Soft/pastel styling, no borders.** On screen, each audience color is its palette slot mixed toward
+  white (or toward the dark surface in dark mode), and that pastel is the program node's fill. This keeps
+  the hue order, which is what makes the groups distinguishable, but lowers contrast. Labels, the legend
+  and the detail panel carry identity, so color is never the only cue.
+- **Shape = node type for structure, region for programs.** UVM, colleges/units and asset categories
+  are all rounded hexagons, told apart by fill and text weight. Programs take their shape from
+  region served: circle = Campus/Burlington, oval = Vermont, rounded box = Regional,
+  pentagon = National/International, square = Unknown. Shape is the right channel for region here
+  because there are only 5 values; color stays on audience. Selection and keyword matches show as
+  soft glows (underlays) rather than outlines. Edges are rounded org-chart elbows.

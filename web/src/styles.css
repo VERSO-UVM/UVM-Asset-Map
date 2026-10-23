@@ -156,13 +156,14 @@ tbody tr:hover { background: var(--plane); }
 .legend .toggle { background: var(--legend-chip); }
 .toggle:hover { filter: brightness(0.97); }
 .toggle.off { opacity: 0.45; text-decoration: line-through; }
-.border-sample { display: inline-block; width: 16px; height: 12px; border-radius: 6px; border-color: var(--ink2); margin-right: 7px; }
 .shape-item { display: inline-flex; align-items: center; font-size: 12px; margin-right: 10px; color: var(--ink2); }
-.shape { display: inline-block; width: 18px; height: 12px; margin-right: 7px; border: 1.5px solid var(--ink2); }
-.shape.hex { clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); background: var(--ink2); border: 0; }
-.shape.rect { border-radius: 4px; }
-.shape.pill { border-radius: 999px; background: var(--chip); }
-.shape.ellipse { border-radius: 50%; }
+.shape { display: inline-block; width: 16px; height: 12px; margin-right: 7px; background: var(--muted); flex: none; }
+.shape.hex { width: 18px; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); }
+.shape.circle { width: 12px; border-radius: 50%; }
+.shape.oval { width: 18px; border-radius: 50%; }
+.shape.box { width: 18px; border-radius: 4px; }
+.shape.square { width: 12px; border-radius: 3px; }
+.shape.pentagon { width: 14px; height: 13px; clip-path: polygon(50% 0, 100% 38%, 82% 100%, 18% 100%, 0 38%); }
 
 .detail { padding: 20px; }
 .detail h2 { margin: 2px 0 8px; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }

@@ -32,23 +32,20 @@ export function audienceBase(group: string, dark: boolean): string {
  * therefore group separation are preserved; every node also carries a text label, so identity is never color-alone.
  */
 export function audienceColor(group: string, dark: boolean): string {
-  return tint(audienceBase(group, dark), "#ffffff", dark ? 0.72 : 0.62);
-}
-
-/** Very light wash of a group's hue over the surface, for node fills. */
-export function audienceFill(group: string, theme: Theme): string {
-  return tint(audienceBase(group, theme.dark), theme.surface, theme.dark ? 0.26 : 0.14);
+  // Light: pastel toward white, so dark ink stays legible on it. Dark: muted toward the dark surface, for light ink.
+  return dark ? tint(audienceBase(group, true), "#211f29", 0.55) : tint(audienceBase(group, false), "#ffffff", 0.5);
 }
 
 export const AUDIENCE_GROUP_NAMES = [...AUDIENCE_GROUPS.map((g) => g.group), UNKNOWN];
 
-/** Region is ordinal: wider reach = heavier border. */
-export const REGIONS: { name: string; style: "dotted" | "solid" | "double" | "dashed"; width: number; short: string }[] = [
-  { name: "Campus/Burlington Area", style: "dotted", width: 3, short: "Campus/Burlington" },
-  { name: "Vermont Statewide", style: "solid", width: 2, short: "Vermont" },
-  { name: "Regional (Northeast/Cross-border)", style: "solid", width: 5, short: "Regional" },
-  { name: "National/International", style: "double", width: 7, short: "National/Intl" },
-  { name: UNKNOWN, style: "dashed", width: 2, short: "Unknown" },
+/** Region served is encoded by program shape (no borders). */
+export type ProgramShape = "ellipse" | "round-rectangle" | "round-pentagon";
+export const REGIONS: { name: string; shape: ProgramShape; equal: boolean; icon: string; short: string }[] = [
+  { name: "Campus/Burlington Area", shape: "ellipse", equal: true, icon: "circle", short: "Campus/Burlington" },
+  { name: "Vermont Statewide", shape: "ellipse", equal: false, icon: "oval", short: "Vermont" },
+  { name: "Regional (Northeast/Cross-border)", shape: "round-rectangle", equal: false, icon: "box", short: "Regional" },
+  { name: "National/International", shape: "round-pentagon", equal: false, icon: "pentagon", short: "National/Intl" },
+  { name: UNKNOWN, shape: "round-rectangle", equal: true, icon: "square", short: "Unknown" },
 ];
 
 export function regionStyle(region: string) {
@@ -57,9 +54,9 @@ export function regionStyle(region: string) {
 
 export const NODE_SHAPES: Record<NodeType, string> = {
   root: "round-hexagon",
-  unit: "round-rectangle",
-  category: "round-rectangle", // drawn as a pill via corner-radius in graphStyle
-  program: "ellipse",
+  unit: "round-hexagon",
+  category: "round-hexagon",
+  program: "ellipse", // overridden per program by region shape
 };
 
 export const TYPE_LABELS: Record<NodeType, string> = {
