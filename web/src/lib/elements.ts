@@ -1,7 +1,7 @@
 import type { ElementDefinition } from "cytoscape";
 import type { AssetData, Filters } from "../types";
 import {
-  AUDIENCE_GROUP_NAMES, NODE_SHAPES, audienceColor, programGroup, regionStyle, tint, type Theme,
+  AUDIENCE_GROUP_NAMES, NODE_SHAPES, audienceColor, audienceFill, programGroup, regionStyle, type Theme,
 } from "./encoding";
 import { closure, descendantPrograms, expandSmall, filteredCounts, isVisibleProgram, programById } from "./tree";
 
@@ -25,9 +25,9 @@ export function mixBar(mix: { group: string; n: number }[], theme: Theme): strin
   const gap = 2;
   const usable = BAR_W - gap * Math.max(0, mix.length - 1);
   let x = 0;
-  const rects = mix.map((m, i) => {
+  const rects = mix.map((m) => {
     const w = total ? (m.n / total) * usable : 0;
-    const r = `<rect x="${x.toFixed(2)}" y="0" width="${w.toFixed(2)}" height="${BAR_H}" rx="${i === 0 || i === mix.length - 1 ? 2 : 0}" fill="${audienceColor(m.group, theme.dark)}"/>`;
+    const r = `<rect x="${x.toFixed(2)}" y="0" width="${w.toFixed(2)}" height="${BAR_H}" rx="3" fill="${audienceColor(m.group, theme.dark)}"/>`;
     x += w + gap;
     return r;
   });
@@ -51,8 +51,8 @@ export function wrapLabel(text: string, perLine = CHARS_PER_LINE): string[] {
 
 function size(lines: string[], type: string) {
   const longest = Math.max(...lines.map((l) => l.length), 4);
-  const padX = type === "program" ? 26 : type === "category" ? 34 : 30;
-  return { w: Math.round(longest * 6.6 + padX), h: Math.round(lines.length * 14 + (type === "program" ? 18 : 30)) };
+  const padX = type === "program" ? 28 : 34;
+  return { w: Math.round(longest * 6.6 + padX), h: Math.round(lines.length * 14 + (type === "program" ? 18 : 38)) };
 }
 
 /** Pure: turn the tree + UI state into cytoscape elements. All styling values travel in `data`. */
@@ -91,7 +91,7 @@ export function buildElements(data: AssetData, opts: BuildOptions): ElementDefin
     const label = isProgram ? lines.join("\n") : [...lines, `${count} program${count === 1 ? "" : "s"}`].join("\n");
     const { w, h } = size(isProgram ? lines : [...lines, "00 programs"], n.type);
     const d: Record<string, unknown> = {
-      id, label, type: n.type, shape: NODE_SHAPES[n.type], w, h, count,
+      id, label, type: n.type, shape: NODE_SHAPES[n.type], w, h, pill: Math.round(h / 2), count,
       childCount: n.children.filter((c) => (counts.get(c) ?? 0) > 0).length,
     };
 
@@ -102,7 +102,7 @@ export function buildElements(data: AssetData, opts: BuildOptions): ElementDefin
       const region = regionStyle(p.region_category);
       Object.assign(d, {
         group, region: region.name,
-        fill: tint(color, theme.surface, theme.dark ? 0.35 : 0.22),
+        fill: audienceFill(group, theme),
         borderColor: color, borderStyle: region.style, borderWidth: region.width,
       });
     } else {
@@ -116,7 +116,8 @@ export function buildElements(data: AssetData, opts: BuildOptions): ElementDefin
       }
       const mix = AUDIENCE_GROUP_NAMES.map((g) => ({ group: g, n: tally.get(g) ?? 0 })).filter((x) => x.n > 0);
       Object.assign(d, {
-        fill: theme.surface, borderColor: theme.border, borderStyle: "solid", borderWidth: n.type === "root" ? 3 : 2,
+        fill: n.type === "category" ? theme.plane : theme.surface,
+        borderColor: theme.border, borderStyle: "solid", borderWidth: n.type === "root" ? 2.5 : 1.5,
         mix: mix.map((x) => `${x.group}: ${x.n}`).join(", "),
         bar: mixBar(mix, theme),
       });

@@ -62,7 +62,11 @@ Short record of the choices behind the data pipeline and the viewer, and why the
   especially for colorblind viewers. The palette was checked with a colorblind-safety validator.
   Colors are fixed per group, so filtering never repaints them. Every node also has a text label,
   and the detail panel lists the full (ungrouped) audience values.
-- **Shape = node type** (hexagon UVM, rounded rectangle unit, tag category, ellipse program).
+- **Soft/pastel styling.** On screen, each audience color is its palette slot mixed toward white, and nodes
+  get a very light wash of it. This keeps the hue order, which is what makes the groups distinguishable, but
+  lowers contrast. Labels, the legend and the detail panel carry identity, so color is never the only cue.
+- **Shape = node type** (rounded hexagon UVM, rounded rectangle unit, pill category, ellipse program). Edges
+  are rounded org-chart elbows.
   **Border = region** (dotted campus, thin solid Vermont, thick solid regional, double
   national/intl, dashed unknown). Program nodes use a light tint of their audience color, so the
   dark label text stays readable. Category and unit nodes show a pie of their programs' audience mix.

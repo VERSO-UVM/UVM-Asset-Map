@@ -21,10 +21,23 @@ export function audienceGroup(audience: string): string {
   return AUDIENCE_GROUPS.find((g) => g.members.includes(audience))?.group ?? UNKNOWN;
 }
 
-export function audienceColor(group: string, dark: boolean): string {
-  const g = AUDIENCE_GROUPS.find((x) => x.group === group);
-  const c = g ?? UNKNOWN_COLOR;
+/** Saturated base hue for a group (the validated palette slot). */
+export function audienceBase(group: string, dark: boolean): string {
+  const c = AUDIENCE_GROUPS.find((x) => x.group === group) ?? UNKNOWN_COLOR;
   return dark ? c.dark : c.light;
+}
+
+/**
+ * The softened (pastel) hue used everywhere on screen: the palette slot mixed toward white. Hue order and
+ * therefore group separation are preserved; every node also carries a text label, so identity is never color-alone.
+ */
+export function audienceColor(group: string, dark: boolean): string {
+  return tint(audienceBase(group, dark), "#ffffff", dark ? 0.72 : 0.62);
+}
+
+/** Very light wash of a group's hue over the surface, for node fills. */
+export function audienceFill(group: string, theme: Theme): string {
+  return tint(audienceBase(group, theme.dark), theme.surface, theme.dark ? 0.26 : 0.14);
 }
 
 export const AUDIENCE_GROUP_NAMES = [...AUDIENCE_GROUPS.map((g) => g.group), UNKNOWN];
@@ -43,9 +56,9 @@ export function regionStyle(region: string) {
 }
 
 export const NODE_SHAPES: Record<NodeType, string> = {
-  root: "hexagon",
+  root: "round-hexagon",
   unit: "round-rectangle",
-  category: "round-tag",
+  category: "round-rectangle", // drawn as a pill via corner-radius in graphStyle
   program: "ellipse",
 };
 
@@ -73,12 +86,12 @@ export interface Theme {
 }
 
 export const LIGHT: Theme = {
-  dark: false, surface: "#fcfcfb", plane: "#f9f9f7", ink: "#0b0b0b", ink2: "#52514e",
-  muted: "#898781", hairline: "#e1e0d9", border: "#c3c2b7", accent: "#2a78d6",
+  dark: false, surface: "#fffefc", plane: "#f6f3fa", ink: "#2d2b38", ink2: "#615d72",
+  muted: "#9b97aa", hairline: "#ece8f3", border: "#d8d2e6", accent: "#8f9ef0",
 };
 export const DARK: Theme = {
-  dark: true, surface: "#1a1a19", plane: "#0d0d0d", ink: "#f0efec", ink2: "#c3c2b7",
-  muted: "#898781", hairline: "#2c2c2a", border: "#383835", accent: "#3987e5",
+  dark: true, surface: "#211f29", plane: "#17161d", ink: "#eceaf4", ink2: "#bcb8cc",
+  muted: "#8d899c", hairline: "#2f2d3a", border: "#423e52", accent: "#a6b3f5",
 };
 
 /** Mix a hex color toward the surface; used for the light tint inside program nodes so ink text stays legible. */

@@ -11,7 +11,7 @@ interface Props {
 const SHAPES: [string, string][] = [
   ["hex", "University"],
   ["rect", "College / unit"],
-  ["tag", "Asset category"],
+  ["pill", "Asset category"],
   ["ellipse", "Program"],
 ];
 
