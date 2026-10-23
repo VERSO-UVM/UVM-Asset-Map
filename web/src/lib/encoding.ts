@@ -1,5 +1,8 @@
 import type { NodeType, Program } from "../types";
 
+/** One duration for every graph transition: layout moves, fades, and viewport fits. */
+export const TRANSITION_MS = 450;
+
 /**
  * Audience taxonomy (10 values, see prompts/enrich_assets.md) folded into 7 color groups,
  * because more than 8 categorical hues are not distinguishable. Groups map to fixed palette slots
