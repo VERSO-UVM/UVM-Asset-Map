@@ -1,0 +1,1795 @@
+{
+ "programs": [
+  {
+   "id": "prog:cals:catamount-farm-csa",
+   "source": "CALS",
+   "name": "Catamount Farm CSA",
+   "unit": "CALS",
+   "asset_type": "Food Service",
+   "asset_category": "Facility/Farm",
+   "email": "Catamount Farm CSA | Agriculture, Landscape, and...",
+   "location": "65 Green Mountain Drive, South Burlington",
+   "who_served": "Community members, students",
+   "region_served": "Burlington, greater community",
+   "description": "Catamount Educational Farm models sustainable farming practices through a working vegetable and fruit farm. The farm provides educational and research opportunities for the UVM community, as well as fresh produce for sale. Students are integral to all activities on the farm, from planting to marketing.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "Catamount Farm CSA | Agriculture, Landscape, and...",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "sustainable farming",
+    "vegetable",
+    "fruit",
+    "csa",
+    "fresh produce",
+    "experiential learning"
+   ],
+   "audience": [
+    "General Public",
+    "Students"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "Campus/Burlington Area"
+  },
+  {
+   "id": "prog:cals:uvm-greenhouse-plant-sale",
+   "source": "CALS",
+   "name": "UVM Greenhouse Plant Sale",
+   "unit": "CALS",
+   "asset_type": "Program",
+   "asset_category": "Event/Fundraiser",
+   "email": "calsstudentservices@uvm.edu",
+   "location": "146 University Place Morrill Hall Room 106 Burlington, Vt 05405",
+   "who_served": "Community members, students, UVM staff & faculty",
+   "region_served": "Burlington and greater community",
+   "description": "UVM greenhouse facilities support the research, teaching, and outreach needs of many departments throughout the college and university. The campus complex currently houses research exploring insect ecology, biological invasions, plant systematics, and forest responses to climate change. Several plant sales, which are open to both students and other community members, take place during the year.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "UVM Greenhouses: Plant Sales and Services | College of...",
+   "last_verified": "Sep 1, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "greenhouse",
+    "plant sale",
+    "insect ecology",
+    "invasive species",
+    "plant systematics",
+    "climate change"
+   ],
+   "audience": [
+    "General Public",
+    "Students",
+    "UVM Faculty & Staff"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "Campus/Burlington Area"
+  },
+  {
+   "id": "prog:cals:entomology-research-laboratory",
+   "source": "CALS",
+   "name": "Entomology Research Laboratory",
+   "unit": "CALS",
+   "asset_type": "Program / Center / Institute",
+   "asset_category": "Research Center/Institute",
+   "email": "cfrank@uvm.edu",
+   "location": "University of Vermont, 661 Spear Street, Burlington ,VT 05405",
+   "who_served": "Vermont farmers",
+   "region_served": "Vermont",
+   "description": "The Entomology Research Laboratory represents a team of scientists committed to the development of effective biological control agents for forest, landscape, greenhouse, and vegetable insect pest management. Emphasis is placed on practical aspects of research to solve ‘real world’ problems. Focused on issues across the Northeast, our projects have national and international significance. Some of the projects that have been investigated are designed to investigate fungal pathogens for the control of serious greenhouse pests.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/~entlab/",
+   "last_verified": "Sep 3, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "entomology",
+    "biological control",
+    "pest management",
+    "greenhouse",
+    "fungal pathogen",
+    "insect"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Researchers"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:north-american-center-for-saffron-research-and-development",
+   "source": "CALS",
+   "name": "North American Center for Saffron Research and Development",
+   "unit": "CALS",
+   "asset_type": "Program / Center / Institute",
+   "asset_category": "Research Center/Institute",
+   "email": "mskinner@uvm.edu",
+   "location": "UVM BioResearch Complex, 661 Spear Street, South Burlington, VT 05405",
+   "who_served": "Vermont farmers",
+   "region_served": "Vermont",
+   "description": "Farmers increasingly use high tunnels (unheated hoop houses) to grow crops that wouldn't normally survive local winters, extending their growing season. Since many growers already compete to sell the same popular crops, like early tomatoes and winter greens, the Norht American Center for Saffron Research and Development looked into a more unique and profitable option: saffron. Saffron is the world's most expensive spice, worth about $5,000 per pound, and comes from a fall-blooming crocus flower. It's also valued for health benefits, including fighting inflammation, possibly easing depression, and lowering cholesterol. The U.S. imported over 25 tons of it in 2013, showing there's real demand. Saffron can survive Vermont winters but doesn't grow well outdoors here, so in 2015 we tested growing it in milk crates and raised beds inside a high tunnel. The results were excellent: the yield beat those of top saffron-producing regions like Spain, and at Vermont's retail price of $19 per gram, that yield could be worth about $100,000 per acre. Compared to other high-tunnel crops, saffron was also more profitable per square foot, generating an estimated $4.03 in net revenue, versus $3.51 for tomatoes and $1.81 for winter greens. It also tested the saffron's quality and found it matched saffron from major producers like Iran, Spain, and Italy. This project has drawn a lot of attention from farmers and the media, and it is now being studied whether this method works long-term and whether there's a strong enough market to make saffron a viable crop for Vermont growers.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/~saffron/",
+   "last_verified": "Sep 3, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "saffron",
+    "high tunnel",
+    "specialty crop",
+    "season extension",
+    "crop profitability",
+    "market development"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Researchers"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:climate-kitchen",
+   "source": "CALS",
+   "name": "Climate Kitchen",
+   "unit": "CALS",
+   "asset_type": "Program",
+   "asset_category": "Research Center/Institute",
+   "email": "atrubek@uvm.edu",
+   "location": "325 Patrick Leahy Building, College of Agriculture and Life Sciences",
+   "who_served": "Anyone",
+   "region_served": "Anyone",
+   "description": "The UVM Climate Kitchen is a hub for research and education, investigating urgent questions about how we all can eat well in a rapidly changing climate. The Climate Kitchen envisions a world where the kitchen is recognized as a vital center for solving food systems problems through often unconventional experimentation, imaginative design, and a belief that we can make positive change.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/cals/climate-kitchen",
+   "last_verified": "Sep 3, 2026",
+   "community_facing": "Needs research",
+   "confidence": "Needs research",
+   "keywords": [
+    "food systems",
+    "climate change",
+    "cooking",
+    "nutrition",
+    "food innovation"
+   ],
+   "audience": [
+    "General Public",
+    "Researchers",
+    "Students"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "National/International"
+  },
+  {
+   "id": "prog:cals:vermont-bee-lab",
+   "source": "CALS",
+   "name": "Vermont Bee Lab",
+   "unit": "CALS",
+   "asset_type": "Program",
+   "asset_category": "Research Center/Institute",
+   "email": "vbl@uvm.edu",
+   "location": "63 Carrigna Drive, Burlington, VT 05045",
+   "who_served": "UVM students and bee keepers in VT",
+   "region_served": "Vermont",
+   "description": "The VT Bee Lab is a research and outreach laboratory located at the University of Vermont. While supporting bee research in Vermont and offering classes to UVM students, there are also opportunities to host a Honey Bee Anatomy and Disease Workshops for beekeepers.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.vermontbeelab.com/",
+   "last_verified": "Sep 3, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "bee",
+    "beekeeping",
+    "pollinator",
+    "bee disease",
+    "workshop"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Students"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:northwest-crops-and-soils-program",
+   "source": "CALS",
+   "name": "Northwest Crops and Soils Program",
+   "unit": "CALS",
+   "asset_type": "Research center",
+   "asset_category": "Extension Program",
+   "email": "cropsoil@uvm.edu Susan.Brouillette@uvm.edu",
+   "location": "Darby Lab Address in Jeffords",
+   "who_served": "Farmers",
+   "region_served": "Vermont",
+   "description": "The UVM Extension Northwest Crops and Soils Program (NWCS) aims to provide the best and most relevant cropping information, both research-based and experiential, delivered in the most practical and understandable ways to Vermont farmers.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "Northwest Crops and Soils Program | The University of...",
+   "last_verified": "",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "crop production",
+    "soil",
+    "field crop",
+    "applied research",
+    "agronomy"
+   ],
+   "audience": [
+    "Farmers & Producers"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:uvm-morgan-horse-farm",
+   "source": "CALS",
+   "name": "UVM Morgan Horse Farm",
+   "unit": "CALS",
+   "asset_type": "Facility",
+   "asset_category": "Facility/Farm",
+   "email": "uvmorgan@uvm.edu",
+   "location": "74 Battell Drive Weybridge, VT 05753",
+   "who_served": "public",
+   "region_served": "Anyone",
+   "description": "The Morgan Horse Farm preserves and promotes the Morgan breed, and provides hands-on educational experiences to student and the public.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/cals/morganhorsefarm",
+   "last_verified": "Sep 3, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "morgan horse",
+    "horse breeding",
+    "animal science",
+    "experiential learning",
+    "agricultural heritage"
+   ],
+   "audience": [
+    "General Public",
+    "Students"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "National/International"
+  },
+  {
+   "id": "prog:cals:vermont-4-h",
+   "source": "CALS",
+   "name": "Vermont 4-H",
+   "unit": "CALS",
+   "asset_type": "Extension youth development program",
+   "asset_category": "Extension Program",
+   "email": "amy.miller@uvm.edu",
+   "location": "140 Kennedy Drive, Suite 201, South Burlington, VT 05403",
+   "who_served": "Vermont youth, families, volunteers, educators, and community organizations",
+   "region_served": "Vermont statewide",
+   "description": "UVM Extension's youth development program offering clubs, educational activities, events, and experiential learning for Vermont youth through local educators and volunteers.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/youth",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "4-h",
+    "youth development",
+    "experiential learning",
+    "volunteer",
+    "club"
+   ],
+   "audience": [
+    "Youth & Families",
+    "Educators & Schools",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "Youth & Families",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:community-horticulture-program-extension-master-gardener-master-gardener-pipeline",
+   "source": "CALS",
+   "name": "Community Horticulture Program / Extension Master Gardener / Master Gardener Pipeline",
+   "unit": "CALS",
+   "asset_type": "Extension community education / volunteer program",
+   "asset_category": "Education & Training",
+   "email": "master.gardener@uvm.edu",
+   "location": "Jeffords Hall, 63 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Vermont gardeners, libraries, schools, nonprofits, civic organizations, and the general public",
+   "region_served": "Vermont statewide",
+   "description": "Trains university-educated volunteers who provide research-based gardening, composting, and environmental stewardship education through helplines, workshops, demonstrations, and community events. It is a class that participants register for; it runs January to May.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/mastergardener/extension-master-gardener-program",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "master gardener",
+    "gardening",
+    "composting",
+    "environmental stewardship",
+    "volunteer",
+    "horticulture",
+    "workshop"
+   ],
+   "audience": [
+    "General Public",
+    "Educators & Schools",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:commercial-horticulture-program",
+   "source": "CALS",
+   "name": "Commercial Horticulture Program",
+   "unit": "CALS",
+   "asset_type": "Extension technical assistance program",
+   "asset_category": "Extension Program",
+   "email": "commhort@uvm.edu",
+   "location": "140 Kennedy Drive, Suite 202, South Burlington, VT 05403",
+   "who_served": "Commercial growers of berries, vegetables, grapes, tree fruit, and related crops",
+   "region_served": "Vermont and the region",
+   "description": "Provides production resources, technical assistance, applied research, grower education, and connections to diagnostic and pest-management services for commercial horticultural producers.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/commercial-horticulture",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "horticulture",
+    "berry",
+    "vegetable",
+    "grape",
+    "tree fruit",
+    "pest management",
+    "technical assistance"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Businesses & Entrepreneurs"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:cals:uvm-extension-forestry-program",
+   "source": "CALS",
+   "name": "UVM Extension Forestry Program",
+   "unit": "CALS",
+   "asset_type": "Extension natural resources program",
+   "asset_category": "Extension Program",
+   "email": "extforestry@office.uvm.edu",
+   "location": "UVM Extension / forestry offices, Burlington, VT",
+   "who_served": "Forest landowners, managers, communities, agencies, and Vermont forestry stakeholders",
+   "region_served": "Vermont statewide",
+   "description": "Provides science-based information, education, and outreach on forests, forest ecology, management, and stewardship for Vermont landowners and natural-resource partners.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/forestry",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "forestry",
+    "forest ecology",
+    "forest management",
+    "landowner",
+    "environmental stewardship"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Government & Policymakers",
+    "General Public"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:northeast-sare",
+   "source": "CALS",
+   "name": "Northeast SARE",
+   "unit": "CALS",
+   "asset_type": "Regional sustainable-agriculture grant and education program",
+   "asset_category": "Research Center/Institute",
+   "email": "vander.gac@uvm.edu",
+   "location": "140 Kennedy Drive, Suite 201, South Burlington, VT 05403",
+   "who_served": "Farmers, agricultural educators, researchers, and sustainable-agriculture organizations",
+   "region_served": "Northeastern U.S.",
+   "description": "The USDA SARE regional program hosted by UVM that funds research and education projects supporting sustainable agriculture across the Northeast.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/northeast-sare",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "Medium",
+   "keywords": [
+    "sustainable agriculture",
+    "grant funding",
+    "usda",
+    "applied research",
+    "farmer education"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Researchers",
+    "Educators & Schools",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:cals:vermont-migrant-education-program-vmep",
+   "source": "CALS",
+   "name": "Vermont Migrant Education Program (VMEP)",
+   "unit": "CALS",
+   "asset_type": "Extension education and support program",
+   "asset_category": "Education & Training",
+   "email": "esbey.hamilton@uvm.edu",
+   "location": "327 US Route 302, Suite 1, Berlin, VT 05641",
+   "who_served": "Eligible migratory students, farmworker families, and young adult farmworkers",
+   "region_served": "Vermont statewide",
+   "description": "Provides educational support, tutoring, ESL, literacy, referrals, advocacy, and community-resource connections for eligible migratory students and farmworker families.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/vermont-migrant-education-program-vmep",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "migrant education",
+    "farmworker",
+    "tutoring",
+    "esl",
+    "literacy",
+    "advocacy"
+   ],
+   "audience": [
+    "Youth & Families",
+    "Students"
+   ],
+   "audience_primary": "Youth & Families",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:center-for-sustainable-agriculture",
+   "source": "CALS",
+   "name": "Center for Sustainable Agriculture",
+   "unit": "CALS",
+   "asset_type": "Extension center",
+   "asset_category": "Extension Program",
+   "email": "sustainable.agriculture@uvm.edu",
+   "location": "Jeffords Hall, 63 Carrigan Drive, Room 105, Burlington, VT 05405",
+   "who_served": "Farmers, food-system partners, communities, policymakers, and agricultural organizations",
+   "region_served": "Vermont and beyond",
+   "description": "Advances economically and environmentally resilient food and farming systems through partnerships, applied research, education, technical assistance, and policy engagement.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/sustainableagriculture",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "sustainable agriculture",
+    "food systems",
+    "farm viability",
+    "technical assistance",
+    "policy",
+    "applied research"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Government & Policymakers",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:cals:maple-syrup-quality-testing-lab",
+   "source": "CALS",
+   "name": "Maple Syrup Quality Testing Lab",
+   "unit": "CALS",
+   "asset_type": "Extension testing service",
+   "asset_category": "Testing & Diagnostic Service",
+   "email": "pmrc@uvm.edu",
+   "location": "Proctor Maple Research Center, 364 Marvin Taylor Road, Underhill, VT 05489",
+   "who_served": "Vermont maple producers and maple-industry partners",
+   "region_served": "Vermont statewide",
+   "description": "Provides maple syrup quality-control testing through a UVM–Vermont Maple Sugar Makers Association partnership supporting Vermont producers and the maple industry.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/maple-syrup-quality-testing-lab",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "maple",
+    "maple syrup",
+    "quality control",
+    "lab testing",
+    "industry partnership"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Businesses & Entrepreneurs"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:agricultural-and-environmental-testing-lab",
+   "source": "CALS",
+   "name": "Agricultural and Environmental Testing Lab",
+   "unit": "CALS",
+   "asset_type": "Extension testing service",
+   "asset_category": "Testing & Diagnostic Service",
+   "email": "AgTesting@uvm.edu",
+   "location": "Jeffords Hall, Room 262, 63 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Farmers, growers, landowners, gardeners, and agricultural/environmental professionals",
+   "region_served": "Vermont statewide / regional",
+   "description": "Provides soil, manure, and related agricultural and environmental testing with submission forms, nutrient-management guidance, and interpretation resources.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/agricultural-and-environmental-testing-lab",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "soil",
+    "soil testing",
+    "manure",
+    "nutrient management",
+    "lab testing"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "General Public",
+    "Businesses & Entrepreneurs"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:cals:plant-diagnostic-clinic",
+   "source": "CALS",
+   "name": "Plant Diagnostic Clinic",
+   "unit": "CALS",
+   "asset_type": "Extension diagnostic service",
+   "asset_category": "Testing & Diagnostic Service",
+   "email": "ann.hazelrigg@uvm.edu",
+   "location": "201 Jeffords Hall, 63 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Vermont home gardeners, commercial growers, greenhouses, farms, orchards, Master Gardeners, and the general public",
+   "region_served": "Vermont statewide",
+   "description": "Statewide plant-health diagnostic resource identifying plant diseases, pests, and weeds and providing integrated pest-management recommendations.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/plant-diagnostic-clinic",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "plant disease",
+    "plant health",
+    "pest management",
+    "weed identification",
+    "diagnostics",
+    "gardening"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "General Public"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:cals:agricultural-business-dairy-forest-farm-water-quality-maple",
+   "source": "CALS",
+   "name": "Agricultural Business (Dairy, Forest, Farm, Water Quality, Maple)",
+   "unit": "CALS",
+   "asset_type": "Trainings and Guidance Services",
+   "asset_category": "Education & Training",
+   "email": "Corinne.Cooper@uvm.edu",
+   "location": "Needs research",
+   "who_served": "Farmers, dairy owners, foresters, agricultural-related business owners, agricultural entreprenuers",
+   "region_served": "Vermont",
+   "description": "Our experienced team delivers one-to-one, small group and online learning opportunities that enhance decision-making and viability. Our programs and research provide direction for key stakeholders to advance initiatives that improve business outcomes in a dynamic agricultural sector. Programs and services are offered for farm viability, forest business, maple business, water quality business analysis, dairy management, agricultural business resources, or general business clinic sign-ups.",
+   "funding_source": "USDA's NIFA and UVM",
+   "funding_amount": "needs research",
+   "link": "Agricultural Business | The University of Vermont",
+   "last_verified": "9-Oct-26",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "farm viability",
+    "business planning",
+    "dairy",
+    "maple",
+    "forestry",
+    "water quality"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Businesses & Entrepreneurs"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:university-wide:leahy-institute-for-rural-partnerships",
+   "source": "University-Wide",
+   "name": "Leahy Institute for Rural Partnerships",
+   "unit": "University-wide",
+   "asset_type": "Institute / engagement hub",
+   "asset_category": "Community Engagement Office",
+   "email": "engageUVM@uvm.edu",
+   "location": "Patrick Leahy Building, 105 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Vermont organizations, businesses, governments, nonprofits, rural communities, and UVM partners",
+   "region_served": "Vermont statewide / rural communities",
+   "description": "Provides grants, direct engagement initiatives, convenings, and partnership support to connect UVM resources with Vermont communities and address rural challenges.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/ruralpartnerships",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "rural development",
+    "grant funding",
+    "partnership",
+    "convening",
+    "community engagement"
+   ],
+   "audience": [
+    "Nonprofits & Community Orgs",
+    "Government & Policymakers",
+    "Businesses & Entrepreneurs"
+   ],
+   "audience_primary": "Nonprofits & Community Orgs",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:university-wide:office-of-engagement",
+   "source": "University-Wide",
+   "name": "Office of Engagement",
+   "unit": "University-wide",
+   "asset_type": "University office / engagement",
+   "asset_category": "Community Engagement Office",
+   "email": "engageUVM@uvm.edu",
+   "location": "Patrick Leahy Building, 105 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Vermont businesses, nonprofits, public entities, communities, and adult/non-traditional learners",
+   "region_served": "Greater Burlington / Vermont statewide",
+   "description": "Serves as a front door for community and organizational partners seeking access to UVM expertise, internships, workforce learning, microcredentials, and other engagement opportunities.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/ruralpartnerships/about-office-engagement",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "partnership",
+    "internship",
+    "workforce development",
+    "microcredential",
+    "adult learning",
+    "community engagement"
+   ],
+   "audience": [
+    "Businesses & Entrepreneurs",
+    "Nonprofits & Community Orgs",
+    "Government & Policymakers",
+    "General Public"
+   ],
+   "audience_primary": "Businesses & Entrepreneurs",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:university-wide:water-resources-institute",
+   "source": "University-Wide",
+   "name": "Water Resources Institute",
+   "unit": "University-wide",
+   "asset_type": "Institute",
+   "asset_category": "Research Center/Institute",
+   "email": "wri@uvm.edu",
+   "location": "Farrell Hall, 210 Colchester Avenue, Burlington, VT 05405",
+   "who_served": "Water-resource researchers, agencies, policymakers, communities, educators, and partners",
+   "region_served": "Vermont statewide / Northeast",
+   "description": "Coordinates programs, researchers, partners, facilities, education, and community outreach around water resources; current work includes monitoring, research, and support for communities preparing for water-related hazards.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/water",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "water resources",
+    "water quality",
+    "environmental monitoring",
+    "flood resilience",
+    "hazard preparedness"
+   ],
+   "audience": [
+    "Researchers",
+    "Government & Policymakers",
+    "Educators & Schools"
+   ],
+   "audience_primary": "Researchers",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:university-wide:gund-institute-for-environment",
+   "source": "University-Wide",
+   "name": "Gund Institute for Environment",
+   "unit": "University-wide",
+   "asset_type": "Institute",
+   "asset_category": "Research Center/Institute",
+   "email": "gund@uvm.edu",
+   "location": "Farrell Hall, 210 Colchester Ave., Burlington, VT 05405",
+   "who_served": "Government, business, nonprofit, community, and academic partners working on environmental challenges",
+   "region_served": "Local to global; includes Vermont",
+   "description": "An interdisciplinary environmental research institute that partners with government, business, and society to translate research into action on climate, health, agriculture, resilient communities, and equity.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/gund",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "environmental research",
+    "climate change",
+    "public health",
+    "resilience",
+    "equity",
+    "interdisciplinary"
+   ],
+   "audience": [
+    "Researchers",
+    "Government & Policymakers",
+    "Businesses & Entrepreneurs",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "Researchers",
+   "region_category": "National/International"
+  },
+  {
+   "id": "prog:university-wide:vermont-epscor",
+   "source": "University-Wide",
+   "name": "Vermont EPSCoR",
+   "unit": "University-wide",
+   "asset_type": "Statewide research and STEM initiative",
+   "asset_category": "Research Center/Institute",
+   "email": "epscor@uvm.edu",
+   "location": "334 Marsh Life Science, 109 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Vermont higher-education institutions, researchers, K-12 students, teachers, state/private-sector stakeholders, and collaborators",
+   "region_served": "Vermont statewide",
+   "description": "Builds Vermont's capacity for scientific research and STEM workforce development through statewide partnerships, stakeholder engagement, training, and public dissemination of research.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://epscor.w3.uvm.edu/",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "stem education",
+    "workforce development",
+    "research capacity",
+    "partnership",
+    "k-12"
+   ],
+   "audience": [
+    "Researchers",
+    "Educators & Schools",
+    "Students"
+   ],
+   "audience_primary": "Researchers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:office-of-the-vice-president-of-research:food-systems-research-institute",
+   "source": "University-Wide",
+   "name": "Food Systems Research Institute",
+   "unit": "Office of the Vice President of Research",
+   "asset_type": "Institute",
+   "asset_category": "Research Center/Institute",
+   "email": "colleen.goodhue@uvm.edu (media contact)",
+   "location": "Patrick Leahy Building, 325, 105 Carrigan Drive, Burlington, VT 05405",
+   "who_served": "Decision-makers, farmers, food-system actors, researchers, and community partners",
+   "region_served": "Vermont / Northeast region",
+   "description": "Supports interdisciplinary food-systems research that engages stakeholders and produces knowledge intended to inform local and regional policies, practices, and programs.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/ovpr/food-systems-research",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "food systems",
+    "interdisciplinary",
+    "policy",
+    "stakeholder engagement",
+    "applied research"
+   ],
+   "audience": [
+    "Researchers",
+    "Farmers & Producers",
+    "Government & Policymakers"
+   ],
+   "audience_primary": "Researchers",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:food-systems-research-institute:soil-health-research-and-extension-center",
+   "source": "University-Wide",
+   "name": "Soil Health Research and Extension Center",
+   "unit": "Food Systems Research Institute",
+   "asset_type": "Research Center",
+   "asset_category": "Research Center/Institute",
+   "email": "SHREC@uvm.edu",
+   "location": "SHREC Lab, Jeffords Hall, 63 Carrigan Dr, Burlington VT 05405",
+   "who_served": "Farmers, gardeners, researchers",
+   "region_served": "Vermont",
+   "description": "The Soil Health Research and Extension Center (SHREC) is a cross-disciplinary research and extension hub focused on integrative soil health, offering comprehensive testing services to address stakeholder and researcher needs.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "The Soil Health Research and Extension Center | Food...",
+   "last_verified": "",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "soil health",
+    "soil",
+    "soil testing",
+    "applied research",
+    "interdisciplinary"
+   ],
+   "audience": [
+    "Farmers & Producers",
+    "Researchers",
+    "General Public"
+   ],
+   "audience_primary": "Farmers & Producers",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:university-wide:vermont-center-for-emerging-technologies-vcet",
+   "source": "University-Wide",
+   "name": "Vermont Center for Emerging Technologies (VCET)",
+   "unit": "University-wide",
+   "asset_type": "Entrepreneurship / innovation center",
+   "asset_category": "Community Engagement Office",
+   "email": "david@vcet.co",
+   "location": "266 Main Street, Burlington, VT 05401",
+   "who_served": "Vermont entrepreneurs, startups, innovators, and emerging technology companies",
+   "region_served": "Greater Burlington / Vermont statewide / region",
+   "description": "Provides business mentoring, technology networking, coworking, accelerator facilities, and early-stage capital resources to help Vermont ventures start and grow.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://vcet.co/",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "entrepreneurship",
+    "startup",
+    "business mentoring",
+    "coworking",
+    "accelerator",
+    "venture capital"
+   ],
+   "audience": [
+    "Businesses & Entrepreneurs"
+   ],
+   "audience_primary": "Businesses & Entrepreneurs",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:university-wide:office-of-community-engaged-learning-celo",
+   "source": "University-Wide",
+   "name": "Office of Community-Engaged Learning (CELO)",
+   "unit": "University-wide",
+   "asset_type": "Community engagement office",
+   "asset_category": "Community Engagement Office",
+   "email": "celo@uvm.edu",
+   "location": "Howe Library, Rooms 302 and 313, 538 Main Street, Burlington, VT 05405",
+   "who_served": "UVM faculty, students, community organizations, local governments, schools, nonprofits, and community partners",
+   "region_served": "Greater Burlington / Vermont statewide",
+   "description": "Supports community-engaged teaching and learning, partnerships, faculty development, and pathways for students and faculty to work with Vermont community organizations and public-sector partners.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/celo/about-us",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "community-engaged learning",
+    "service learning",
+    "partnership",
+    "faculty development",
+    "community engagement"
+   ],
+   "audience": [
+    "Students",
+    "UVM Faculty & Staff",
+    "Nonprofits & Community Orgs",
+    "Government & Policymakers"
+   ],
+   "audience_primary": "Students",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:university-wide:uvm-place-program",
+   "source": "University-Wide",
+   "name": "UVM PLACE Program",
+   "unit": "University-wide",
+   "asset_type": "Community education / place-based engagement program",
+   "asset_category": "Education & Training",
+   "email": "walter.poleman@uvm.edu",
+   "location": "University of Vermont / Shelburne Farms partnership",
+   "who_served": "Vermont towns, local residents, schools, town commissions, historical societies, and conservation organizations",
+   "region_served": "Vermont towns statewide",
+   "description": "A place-based community education program that works with Vermont towns on natural and cultural history through presentations, field trips, workshops, visioning forums, and collaborative projects.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/place/",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "place-based education",
+    "natural history",
+    "cultural history",
+    "field trip",
+    "workshop",
+    "town planning"
+   ],
+   "audience": [
+    "General Public",
+    "Educators & Schools",
+    "Government & Policymakers",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:office-of-the-vice-president-of-research:institute-for-agroecology",
+   "source": "University-Wide",
+   "name": "Institute for Agroecology",
+   "unit": "Office of the Vice President of Research",
+   "asset_type": "Program / Center / Institute",
+   "asset_category": "Research Center/Institute",
+   "email": "agroecology@uvm.edu",
+   "location": "Jeffords Hall, 63 Carrigan Drive Leahy Hall, 105 Carrigan Drive Burlington VT 05405",
+   "who_served": "Farmers, food-system practitioners, researchers, community partners, and people working toward more just and sustainable food systems",
+   "region_served": "Vermont / international",
+   "description": "The IFA focuses on research, learning, and action that conducts profound work to regenerate the environment, cool the planet, and provide healthy food. With the main goal of creating more just and sustainable food systems, the IFSA seeks to confront inequities, foster human and ecological well-being, and support dignified and meaningful livelihoods. The IFA has worked collaboratively with various networks in both civil society and allied research institutions to spread knowledge as the world becomes increasingly interested in agroecology; this has been done through initiatives such as the Power Up Seminars.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/instituteforagroecology",
+   "last_verified": "Aug 27, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "agroecology",
+    "food systems",
+    "food justice",
+    "regenerative agriculture",
+    "equity",
+    "seminar"
+   ],
+   "audience": [
+    "Researchers",
+    "Farmers & Producers",
+    "Nonprofits & Community Orgs"
+   ],
+   "audience_primary": "Researchers",
+   "region_category": "National/International"
+  },
+  {
+   "id": "prog:strategic-communications:across-the-fence",
+   "source": "University-Wide",
+   "name": "Across the Fence",
+   "unit": "Strategic Communications",
+   "asset_type": "Extension public media program",
+   "asset_category": "Extension Program",
+   "email": "keith.silva@uvm.edu",
+   "location": "23 Mansfield Avenue, Burlington, VT 05401-3323",
+   "who_served": "Vermont and surrounding-region households; farmers, families, and the general public",
+   "region_served": "Vermont, northern New York, western New Hampshire, southern Quebec",
+   "description": "A daily 15-minute television program co-produced by UVM Extension and WCAX-TV that shares practical information and highlights UVM work benefiting viewers and communities.",
+   "funding_source": "needs research",
+   "funding_amount": "needs research",
+   "link": "https://www.uvm.edu/extension/across-fence",
+   "last_verified": "Aug 28, 2026",
+   "community_facing": "Yes",
+   "confidence": "High",
+   "keywords": [
+    "television",
+    "public media",
+    "extension outreach",
+    "agriculture",
+    "family"
+   ],
+   "audience": [
+    "General Public",
+    "Farmers & Producers",
+    "Youth & Families"
+   ],
+   "audience_primary": "General Public",
+   "region_category": "Regional (Northeast/Cross-border)"
+  },
+  {
+   "id": "prog:university-wide:rallython",
+   "source": "University-Wide",
+   "name": "Rallython",
+   "unit": "University-wide",
+   "asset_type": "Fundraiser",
+   "asset_category": "Event/Fundraiser",
+   "email": "needs research",
+   "location": "UVM campus",
+   "who_served": "Children's Miracle Network Hospital and UVM's Children Hospital",
+   "region_served": "Vermont and greater network",
+   "description": "RALLYTHON is a yearlong fundraising effort for the UVM Children's Hospital that culminates in a 12-hour dance marathon in the Davis Center (representing the 12 hour length of a nurses' shift at the hospital). Since 2015, RALLYTHON has raised over half a million dollars for the Children's Hospital.",
+   "funding_source": "Fundraising",
+   "funding_amount": "1 year long",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [
+    "fundraising",
+    "dance marathon",
+    "children's hospital",
+    "student organization",
+    "philanthropy"
+   ],
+   "audience": [
+    "Students",
+    "Youth & Families"
+   ],
+   "audience_primary": "Students",
+   "region_category": "Vermont Statewide"
+  },
+  {
+   "id": "prog:university-wide:uvm-libraries",
+   "source": "University-Wide",
+   "name": "UVM Libraries",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  },
+  {
+   "id": "prog:university-wide:instrumentation-and-technical-services",
+   "source": "University-Wide",
+   "name": "Instrumentation and Technical Services",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  },
+  {
+   "id": "prog:university-wide:complex-systems-institute-includes-verso",
+   "source": "University-Wide",
+   "name": "Complex Systems Institute (includes VERSO)",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  },
+  {
+   "id": "prog:university-wide:vermont-biomedical-research-network",
+   "source": "University-Wide",
+   "name": "Vermont Biomedical Research Network",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  },
+  {
+   "id": "prog:university-wide:vgan-tech-hub",
+   "source": "University-Wide",
+   "name": "VGaN Tech Hub",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  },
+  {
+   "id": "prog:university-wide:osher-center",
+   "source": "University-Wide",
+   "name": "OSHER Center",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  },
+  {
+   "id": "prog:university-wide:vermont-advanced-computing-center",
+   "source": "University-Wide",
+   "name": "Vermont Advanced Computing Center",
+   "unit": "University-wide",
+   "asset_type": "",
+   "asset_category": "Unspecified",
+   "email": "",
+   "location": "",
+   "who_served": "",
+   "region_served": "",
+   "description": "",
+   "funding_source": "",
+   "funding_amount": "",
+   "link": "",
+   "last_verified": "",
+   "community_facing": "",
+   "confidence": "",
+   "keywords": [],
+   "audience": [
+    "Unknown"
+   ],
+   "audience_primary": "Unknown",
+   "region_category": "Unknown"
+  }
+ ],
+ "nodes": {
+  "uvm": {
+   "id": "uvm",
+   "type": "root",
+   "label": "UVM",
+   "parent": null,
+   "children": [
+    "unit:cals",
+    "unit:university-wide",
+    "unit:office-of-the-vice-president-of-research",
+    "unit:food-systems-research-institute",
+    "unit:strategic-communications"
+   ],
+   "count": 39
+  },
+  "unit:cals": {
+   "id": "unit:cals",
+   "type": "unit",
+   "label": "CALS",
+   "parent": "uvm",
+   "children": [
+    "cat:cals:extension-program",
+    "cat:cals:research-center-institute",
+    "cat:cals:education-training",
+    "cat:cals:testing-diagnostic-service",
+    "cat:cals:facility-farm",
+    "cat:cals:event-fundraiser"
+   ],
+   "count": 19
+  },
+  "cat:cals:facility-farm": {
+   "id": "cat:cals:facility-farm",
+   "type": "category",
+   "label": "Facility/Farm",
+   "parent": "unit:cals",
+   "children": [
+    "prog:cals:catamount-farm-csa",
+    "prog:cals:uvm-morgan-horse-farm"
+   ],
+   "count": 2
+  },
+  "prog:cals:catamount-farm-csa": {
+   "id": "prog:cals:catamount-farm-csa",
+   "type": "program",
+   "label": "Catamount Farm CSA",
+   "parent": "cat:cals:facility-farm",
+   "children": [],
+   "count": 1
+  },
+  "cat:cals:event-fundraiser": {
+   "id": "cat:cals:event-fundraiser",
+   "type": "category",
+   "label": "Event/Fundraiser",
+   "parent": "unit:cals",
+   "children": [
+    "prog:cals:uvm-greenhouse-plant-sale"
+   ],
+   "count": 1
+  },
+  "prog:cals:uvm-greenhouse-plant-sale": {
+   "id": "prog:cals:uvm-greenhouse-plant-sale",
+   "type": "program",
+   "label": "UVM Greenhouse Plant Sale",
+   "parent": "cat:cals:event-fundraiser",
+   "children": [],
+   "count": 1
+  },
+  "cat:cals:research-center-institute": {
+   "id": "cat:cals:research-center-institute",
+   "type": "category",
+   "label": "Research Center/Institute",
+   "parent": "unit:cals",
+   "children": [
+    "prog:cals:climate-kitchen",
+    "prog:cals:entomology-research-laboratory",
+    "prog:cals:north-american-center-for-saffron-research-and-development",
+    "prog:cals:northeast-sare",
+    "prog:cals:vermont-bee-lab"
+   ],
+   "count": 5
+  },
+  "prog:cals:entomology-research-laboratory": {
+   "id": "prog:cals:entomology-research-laboratory",
+   "type": "program",
+   "label": "Entomology Research Laboratory",
+   "parent": "cat:cals:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:north-american-center-for-saffron-research-and-development": {
+   "id": "prog:cals:north-american-center-for-saffron-research-and-development",
+   "type": "program",
+   "label": "North American Center for Saffron Research and Development",
+   "parent": "cat:cals:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:climate-kitchen": {
+   "id": "prog:cals:climate-kitchen",
+   "type": "program",
+   "label": "Climate Kitchen",
+   "parent": "cat:cals:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:vermont-bee-lab": {
+   "id": "prog:cals:vermont-bee-lab",
+   "type": "program",
+   "label": "Vermont Bee Lab",
+   "parent": "cat:cals:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "cat:cals:extension-program": {
+   "id": "cat:cals:extension-program",
+   "type": "category",
+   "label": "Extension Program",
+   "parent": "unit:cals",
+   "children": [
+    "prog:cals:center-for-sustainable-agriculture",
+    "prog:cals:commercial-horticulture-program",
+    "prog:cals:northwest-crops-and-soils-program",
+    "prog:cals:uvm-extension-forestry-program",
+    "prog:cals:vermont-4-h"
+   ],
+   "count": 5
+  },
+  "prog:cals:northwest-crops-and-soils-program": {
+   "id": "prog:cals:northwest-crops-and-soils-program",
+   "type": "program",
+   "label": "Northwest Crops and Soils Program",
+   "parent": "cat:cals:extension-program",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:uvm-morgan-horse-farm": {
+   "id": "prog:cals:uvm-morgan-horse-farm",
+   "type": "program",
+   "label": "UVM Morgan Horse Farm",
+   "parent": "cat:cals:facility-farm",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:vermont-4-h": {
+   "id": "prog:cals:vermont-4-h",
+   "type": "program",
+   "label": "Vermont 4-H",
+   "parent": "cat:cals:extension-program",
+   "children": [],
+   "count": 1
+  },
+  "cat:cals:education-training": {
+   "id": "cat:cals:education-training",
+   "type": "category",
+   "label": "Education & Training",
+   "parent": "unit:cals",
+   "children": [
+    "prog:cals:agricultural-business-dairy-forest-farm-water-quality-maple",
+    "prog:cals:community-horticulture-program-extension-master-gardener-master-gardener-pipeline",
+    "prog:cals:vermont-migrant-education-program-vmep"
+   ],
+   "count": 3
+  },
+  "prog:cals:community-horticulture-program-extension-master-gardener-master-gardener-pipeline": {
+   "id": "prog:cals:community-horticulture-program-extension-master-gardener-master-gardener-pipeline",
+   "type": "program",
+   "label": "Community Horticulture Program / Extension Master Gardener / Master Gardener Pipeline",
+   "parent": "cat:cals:education-training",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:commercial-horticulture-program": {
+   "id": "prog:cals:commercial-horticulture-program",
+   "type": "program",
+   "label": "Commercial Horticulture Program",
+   "parent": "cat:cals:extension-program",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:uvm-extension-forestry-program": {
+   "id": "prog:cals:uvm-extension-forestry-program",
+   "type": "program",
+   "label": "UVM Extension Forestry Program",
+   "parent": "cat:cals:extension-program",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:northeast-sare": {
+   "id": "prog:cals:northeast-sare",
+   "type": "program",
+   "label": "Northeast SARE",
+   "parent": "cat:cals:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:vermont-migrant-education-program-vmep": {
+   "id": "prog:cals:vermont-migrant-education-program-vmep",
+   "type": "program",
+   "label": "Vermont Migrant Education Program (VMEP)",
+   "parent": "cat:cals:education-training",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:center-for-sustainable-agriculture": {
+   "id": "prog:cals:center-for-sustainable-agriculture",
+   "type": "program",
+   "label": "Center for Sustainable Agriculture",
+   "parent": "cat:cals:extension-program",
+   "children": [],
+   "count": 1
+  },
+  "cat:cals:testing-diagnostic-service": {
+   "id": "cat:cals:testing-diagnostic-service",
+   "type": "category",
+   "label": "Testing & Diagnostic Service",
+   "parent": "unit:cals",
+   "children": [
+    "prog:cals:agricultural-and-environmental-testing-lab",
+    "prog:cals:maple-syrup-quality-testing-lab",
+    "prog:cals:plant-diagnostic-clinic"
+   ],
+   "count": 3
+  },
+  "prog:cals:maple-syrup-quality-testing-lab": {
+   "id": "prog:cals:maple-syrup-quality-testing-lab",
+   "type": "program",
+   "label": "Maple Syrup Quality Testing Lab",
+   "parent": "cat:cals:testing-diagnostic-service",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:agricultural-and-environmental-testing-lab": {
+   "id": "prog:cals:agricultural-and-environmental-testing-lab",
+   "type": "program",
+   "label": "Agricultural and Environmental Testing Lab",
+   "parent": "cat:cals:testing-diagnostic-service",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:plant-diagnostic-clinic": {
+   "id": "prog:cals:plant-diagnostic-clinic",
+   "type": "program",
+   "label": "Plant Diagnostic Clinic",
+   "parent": "cat:cals:testing-diagnostic-service",
+   "children": [],
+   "count": 1
+  },
+  "prog:cals:agricultural-business-dairy-forest-farm-water-quality-maple": {
+   "id": "prog:cals:agricultural-business-dairy-forest-farm-water-quality-maple",
+   "type": "program",
+   "label": "Agricultural Business (Dairy, Forest, Farm, Water Quality, Maple)",
+   "parent": "cat:cals:education-training",
+   "children": [],
+   "count": 1
+  },
+  "unit:university-wide": {
+   "id": "unit:university-wide",
+   "type": "unit",
+   "label": "University-wide",
+   "parent": "uvm",
+   "children": [
+    "cat:university-wide:unspecified",
+    "cat:university-wide:community-engagement-office",
+    "cat:university-wide:research-center-institute",
+    "cat:university-wide:education-training",
+    "cat:university-wide:event-fundraiser"
+   ],
+   "count": 16
+  },
+  "cat:university-wide:community-engagement-office": {
+   "id": "cat:university-wide:community-engagement-office",
+   "type": "category",
+   "label": "Community Engagement Office",
+   "parent": "unit:university-wide",
+   "children": [
+    "prog:university-wide:leahy-institute-for-rural-partnerships",
+    "prog:university-wide:office-of-community-engaged-learning-celo",
+    "prog:university-wide:office-of-engagement",
+    "prog:university-wide:vermont-center-for-emerging-technologies-vcet"
+   ],
+   "count": 4
+  },
+  "prog:university-wide:leahy-institute-for-rural-partnerships": {
+   "id": "prog:university-wide:leahy-institute-for-rural-partnerships",
+   "type": "program",
+   "label": "Leahy Institute for Rural Partnerships",
+   "parent": "cat:university-wide:community-engagement-office",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:office-of-engagement": {
+   "id": "prog:university-wide:office-of-engagement",
+   "type": "program",
+   "label": "Office of Engagement",
+   "parent": "cat:university-wide:community-engagement-office",
+   "children": [],
+   "count": 1
+  },
+  "cat:university-wide:research-center-institute": {
+   "id": "cat:university-wide:research-center-institute",
+   "type": "category",
+   "label": "Research Center/Institute",
+   "parent": "unit:university-wide",
+   "children": [
+    "prog:university-wide:gund-institute-for-environment",
+    "prog:university-wide:vermont-epscor",
+    "prog:university-wide:water-resources-institute"
+   ],
+   "count": 3
+  },
+  "prog:university-wide:water-resources-institute": {
+   "id": "prog:university-wide:water-resources-institute",
+   "type": "program",
+   "label": "Water Resources Institute",
+   "parent": "cat:university-wide:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:gund-institute-for-environment": {
+   "id": "prog:university-wide:gund-institute-for-environment",
+   "type": "program",
+   "label": "Gund Institute for Environment",
+   "parent": "cat:university-wide:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:vermont-epscor": {
+   "id": "prog:university-wide:vermont-epscor",
+   "type": "program",
+   "label": "Vermont EPSCoR",
+   "parent": "cat:university-wide:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "unit:office-of-the-vice-president-of-research": {
+   "id": "unit:office-of-the-vice-president-of-research",
+   "type": "unit",
+   "label": "Office of the Vice President of Research",
+   "parent": "uvm",
+   "children": [
+    "cat:office-of-the-vice-president-of-research:research-center-institute"
+   ],
+   "count": 2
+  },
+  "cat:office-of-the-vice-president-of-research:research-center-institute": {
+   "id": "cat:office-of-the-vice-president-of-research:research-center-institute",
+   "type": "category",
+   "label": "Research Center/Institute",
+   "parent": "unit:office-of-the-vice-president-of-research",
+   "children": [
+    "prog:office-of-the-vice-president-of-research:food-systems-research-institute",
+    "prog:office-of-the-vice-president-of-research:institute-for-agroecology"
+   ],
+   "count": 2
+  },
+  "prog:office-of-the-vice-president-of-research:food-systems-research-institute": {
+   "id": "prog:office-of-the-vice-president-of-research:food-systems-research-institute",
+   "type": "program",
+   "label": "Food Systems Research Institute",
+   "parent": "cat:office-of-the-vice-president-of-research:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "unit:food-systems-research-institute": {
+   "id": "unit:food-systems-research-institute",
+   "type": "unit",
+   "label": "Food Systems Research Institute",
+   "parent": "uvm",
+   "children": [
+    "cat:food-systems-research-institute:research-center-institute"
+   ],
+   "count": 1
+  },
+  "cat:food-systems-research-institute:research-center-institute": {
+   "id": "cat:food-systems-research-institute:research-center-institute",
+   "type": "category",
+   "label": "Research Center/Institute",
+   "parent": "unit:food-systems-research-institute",
+   "children": [
+    "prog:food-systems-research-institute:soil-health-research-and-extension-center"
+   ],
+   "count": 1
+  },
+  "prog:food-systems-research-institute:soil-health-research-and-extension-center": {
+   "id": "prog:food-systems-research-institute:soil-health-research-and-extension-center",
+   "type": "program",
+   "label": "Soil Health Research and Extension Center",
+   "parent": "cat:food-systems-research-institute:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:vermont-center-for-emerging-technologies-vcet": {
+   "id": "prog:university-wide:vermont-center-for-emerging-technologies-vcet",
+   "type": "program",
+   "label": "Vermont Center for Emerging Technologies (VCET)",
+   "parent": "cat:university-wide:community-engagement-office",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:office-of-community-engaged-learning-celo": {
+   "id": "prog:university-wide:office-of-community-engaged-learning-celo",
+   "type": "program",
+   "label": "Office of Community-Engaged Learning (CELO)",
+   "parent": "cat:university-wide:community-engagement-office",
+   "children": [],
+   "count": 1
+  },
+  "cat:university-wide:education-training": {
+   "id": "cat:university-wide:education-training",
+   "type": "category",
+   "label": "Education & Training",
+   "parent": "unit:university-wide",
+   "children": [
+    "prog:university-wide:uvm-place-program"
+   ],
+   "count": 1
+  },
+  "prog:university-wide:uvm-place-program": {
+   "id": "prog:university-wide:uvm-place-program",
+   "type": "program",
+   "label": "UVM PLACE Program",
+   "parent": "cat:university-wide:education-training",
+   "children": [],
+   "count": 1
+  },
+  "prog:office-of-the-vice-president-of-research:institute-for-agroecology": {
+   "id": "prog:office-of-the-vice-president-of-research:institute-for-agroecology",
+   "type": "program",
+   "label": "Institute for Agroecology",
+   "parent": "cat:office-of-the-vice-president-of-research:research-center-institute",
+   "children": [],
+   "count": 1
+  },
+  "unit:strategic-communications": {
+   "id": "unit:strategic-communications",
+   "type": "unit",
+   "label": "Strategic Communications",
+   "parent": "uvm",
+   "children": [
+    "cat:strategic-communications:extension-program"
+   ],
+   "count": 1
+  },
+  "cat:strategic-communications:extension-program": {
+   "id": "cat:strategic-communications:extension-program",
+   "type": "category",
+   "label": "Extension Program",
+   "parent": "unit:strategic-communications",
+   "children": [
+    "prog:strategic-communications:across-the-fence"
+   ],
+   "count": 1
+  },
+  "prog:strategic-communications:across-the-fence": {
+   "id": "prog:strategic-communications:across-the-fence",
+   "type": "program",
+   "label": "Across the Fence",
+   "parent": "cat:strategic-communications:extension-program",
+   "children": [],
+   "count": 1
+  },
+  "cat:university-wide:event-fundraiser": {
+   "id": "cat:university-wide:event-fundraiser",
+   "type": "category",
+   "label": "Event/Fundraiser",
+   "parent": "unit:university-wide",
+   "children": [
+    "prog:university-wide:rallython"
+   ],
+   "count": 1
+  },
+  "prog:university-wide:rallython": {
+   "id": "prog:university-wide:rallython",
+   "type": "program",
+   "label": "Rallython",
+   "parent": "cat:university-wide:event-fundraiser",
+   "children": [],
+   "count": 1
+  },
+  "cat:university-wide:unspecified": {
+   "id": "cat:university-wide:unspecified",
+   "type": "category",
+   "label": "Unspecified",
+   "parent": "unit:university-wide",
+   "children": [
+    "prog:university-wide:complex-systems-institute-includes-verso",
+    "prog:university-wide:instrumentation-and-technical-services",
+    "prog:university-wide:osher-center",
+    "prog:university-wide:uvm-libraries",
+    "prog:university-wide:vermont-advanced-computing-center",
+    "prog:university-wide:vermont-biomedical-research-network",
+    "prog:university-wide:vgan-tech-hub"
+   ],
+   "count": 7
+  },
+  "prog:university-wide:uvm-libraries": {
+   "id": "prog:university-wide:uvm-libraries",
+   "type": "program",
+   "label": "UVM Libraries",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:instrumentation-and-technical-services": {
+   "id": "prog:university-wide:instrumentation-and-technical-services",
+   "type": "program",
+   "label": "Instrumentation and Technical Services",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:complex-systems-institute-includes-verso": {
+   "id": "prog:university-wide:complex-systems-institute-includes-verso",
+   "type": "program",
+   "label": "Complex Systems Institute (includes VERSO)",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:vermont-biomedical-research-network": {
+   "id": "prog:university-wide:vermont-biomedical-research-network",
+   "type": "program",
+   "label": "Vermont Biomedical Research Network",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:vgan-tech-hub": {
+   "id": "prog:university-wide:vgan-tech-hub",
+   "type": "program",
+   "label": "VGaN Tech Hub",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:osher-center": {
+   "id": "prog:university-wide:osher-center",
+   "type": "program",
+   "label": "OSHER Center",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  },
+  "prog:university-wide:vermont-advanced-computing-center": {
+   "id": "prog:university-wide:vermont-advanced-computing-center",
+   "type": "program",
+   "label": "Vermont Advanced Computing Center",
+   "parent": "cat:university-wide:unspecified",
+   "children": [],
+   "count": 1
+  }
+ },
+ "root": "uvm"
+}

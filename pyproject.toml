@@ -1,0 +1,15 @@
+[project]
+name = "uvm-asset-map"
+version = "0.1.0"
+description = "Data pipeline for the UVM asset map viewer"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
